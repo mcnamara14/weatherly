@@ -1,1 +1,21 @@
-/* .greeting { padding-bottom: 20px; border-bottom: 1px solid #ccc; } */
+body {
+    margin: 0;
+    padding: 0;
+    background: #486689;
+}
+
+header {
+    height: 70px;
+    background: #365579;
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 35px;
+}
