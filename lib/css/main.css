@@ -1,21 +1,194 @@
 body {
     margin: 0;
     padding: 0;
-    background: #486689;
+    background: #5c83d7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/assets/sunny-bg.jpg')
+}
+
+.container {
+    width: 80%;
+    padding: 80px 20px 0px 20px;
+    margin: 0 auto;
 }
 
 header {
     height: 70px;
-    background: #365579;
+    background: #5c83d7;
     display: flex;
+    box-shadow: 1px 1px 3px #4e72bf;
     align-items: center;
 }
 
 header div {
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
+    padding: 0 20px
+}
+
+header input {
+    background: #578ce5;
+    width: 42%;
+    box-shadow: inset 1px 1px 0px #4e72bf;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #eee;
+}
+
+header input::placeholder {
+    color: #eee;
 }
 
 .logo {
     height: 35px;
+}
+
+.currentWeather {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.focalConditions {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.conditionDetails {
+    width: 43%;
+}
+
+.focalInfo {
+    height: 100%;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 90px;
+    color: #98d8f3;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    margin: 0; 
+}
+
+h1 sup {
+    font-size: 45px;
+    vertical-align: top;
+}
+
+h4 {
+    font-size: 34px;
+    color: #98d8f3;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    margin: 0; 
+}
+
+h6 {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    margin: 15px 0 0 0;
+}
+
+h6 sup {
+    font-size: 18px;
+}
+
+hr {
+    border-top: none;
+}
+
+.focalConditions img {
+    width: 60%;
+}
+
+h3 {
+    float: left;
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    color:#fff;
+}
+
+h2 {
+    float: right;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 30px;
+    line-height: 34px;
+}
+
+h2 span {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.detailHeadings {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h5 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 34px;
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+
+.stat p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    margin:0; 
+}
+
+.stat {
+    width: 33.33%;
+}
+
+.stat.last {
+    text-align: right;
+}
+
+.stat.center {
+    text-align: center;
+}
+
+.detailStats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.todaysWeather {
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+}
+
+.todaysWeather p {
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    line-height: 20px;
 }
