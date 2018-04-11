@@ -4,7 +4,10 @@ body {
     background: #5c83d7;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/assets/sunny-bg.jpg')
+    background-image: url('/assets/sunny-bg.jpg');
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-weight: 100;
 }
 
 .container {
@@ -84,17 +87,13 @@ h1 sup {
 }
 
 h4 {
-    font-size: 34px;
-    color: #98d8f3;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
     margin: 0; 
 }
 
 h6 {
     font-size: 30px;
-    color: #fff;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 100;
     margin: 15px 0 0 0;
 }
@@ -115,17 +114,13 @@ h3 {
     float: left;
     margin: 0;
     font-size: 24px;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 100;
-    color:#fff;
 }
 
 h2 {
     float: right;
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 100;
-    color: #fff;
     font-size: 30px;
     line-height: 34px;
 }
@@ -146,15 +141,11 @@ h2 span {
 h5 {
     font-family: 'Exo 2', sans-serif;
     font-size: 34px;
-    color: #fff;
     font-weight: 300;
     margin: 0;
 }
 
 .stat p {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 100;
-    color: #fff;
     margin:0; 
 }
 
@@ -182,13 +173,10 @@ h5 {
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     font-size: 18px;
-    color: #fff;
 }
 
 .todaysWeather p {
     font-size: 14px;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 100;
-    color: #fff;
     line-height: 20px;
 }
