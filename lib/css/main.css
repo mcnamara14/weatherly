@@ -53,6 +53,7 @@ header input::placeholder {
 
 .currentWeather {
     width: 100%;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,13 +93,13 @@ h4 {
     margin: 0; 
 }
 
-h6 {
+.currentHiLow {
     font-size: 30px;
     font-weight: 100;
     margin: 15px 0 0 0;
 }
 
-h6 sup {
+.currentHiLow sup {
     font-size: 18px;
 }
 
@@ -110,7 +111,7 @@ hr {
     width: 60%;
 }
 
-h3 {
+h6 {
     float: left;
     margin: 0;
     font-size: 24px;
@@ -179,4 +180,76 @@ h5 {
     font-size: 14px;
     font-family: 'Work Sans', sans-serif;
     line-height: 20px;
+}
+
+.extendedForecastHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.extendedForecastHeader hr {
+    width: 46%;
+    height: 1px;
+    border-top: none;
+    display: inline-block;
+}
+
+h3 {
+    font-weight: 100;
+    padding: 0 25px;
+    font-size: 22px;
+}
+
+h3 span {
+    font-family: 'Exo 2', sans-serif; 
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 24px;
+}
+
+.sevenHourForecast {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourForecast {
+    width: 10%;
+    text-align: center;
+}
+
+.hourForecast img {
+    width: 45px;
+}
+
+.hourHeader {
+    font-family: 'Work Sans', sans-serif; 
+    color: #98d8f3;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.hourHeader span {
+    color: #fff;
+}
+
+.hourTemp {
+    font-family: 'Exo 2', sans-serif; 
+    float: left;
+    font-size: 32px;
+    vertical-align: middle;
+    font-size: 34px;
+    margin-bottom: 3px;
+}
+
+.hourForecast div {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
 }
