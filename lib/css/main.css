@@ -18,7 +18,7 @@ body {
 
 header {
     height: 70px;
-    background: #5c83d7;
+    background: #4f7fd3;
     display: flex;
     box-shadow: 1px 1px 3px #4e72bf;
     align-items: center;
@@ -226,7 +226,7 @@ h3 span {
     width: 45px;
 }
 
-.hourHeader {
+.extendedTimeDay {
     font-family: 'Work Sans', sans-serif; 
     color: #98d8f3;
     font-size: 24px;
@@ -234,7 +234,7 @@ h3 span {
     margin-bottom: 10px;
 }
 
-.hourHeader span {
+.extendedTimeDay span {
     color: #fff;
 }
 
@@ -252,4 +252,42 @@ h3 span {
     height: 40px;
     justify-content: space-between;
     align-items: center;
+}
+
+.day {
+    width: 14%;
+    padding: 2%;
+    background: #4f7fd3;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #4e72bf;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.day img {
+    width: 7vw;
+    margin-top: 30px;
+}
+
+.day p {
+    font-size: 1.2vw;
+}
+
+.extendedHiLow {
+    font-family: 'Exo 2', sans-serif; 
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.tenDayForecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.day .precipitation {
+    color: #98d8f3;
+    font-size: 1vw;
 }
