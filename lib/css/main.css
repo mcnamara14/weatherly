@@ -222,15 +222,20 @@ h3 span {
     text-align: center;
 }
 
-.hourForecast img {
-    width: 45px;
+.hourForecast i {
+    width: 100%;
+    margin-left: 12px;
+    background-repeat: no-repeat !important;
+    height: 175%;
 }
 
 .extendedTimeDay {
     font-family: 'Work Sans', sans-serif; 
     color: #98d8f3;
     font-size: 24px;
+    text-transform: uppercase;
     font-weight: 100;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -257,7 +262,7 @@ h3 span {
 .day {
     width: 14%;
     padding: 2%;
-    background: #4f7fd3;
+    background: #4571bd;
     height: 300px;
     border-radius: 8px;
     box-shadow: 1px 1px 3px #4e72bf;
@@ -272,6 +277,7 @@ h3 span {
 
 .day p {
     font-size: 1.2vw;
+    margin-bottom: -5px;
 }
 
 .extendedHiLow {
@@ -287,7 +293,19 @@ h3 span {
     flex-wrap: wrap;
 }
 
+.tenDayForecast i {
+    background-repeat: no-repeat !important;
+    height: 50%;
+    margin: 0px 0 -10px 15px;
+}
+
 .day .precipitation {
     color: #98d8f3;
     font-size: 1vw;
+}
+
+.currentConditionImg .wu-256 {
+    height: 400px;
+    width: 400px;
+    margin: 0 -30px 0 -80px;
 }
