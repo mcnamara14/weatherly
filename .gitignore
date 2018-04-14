@@ -59,4 +59,4 @@ typings/
 
 # API key
 
-./lib/key.js
+/key.js
