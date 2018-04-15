@@ -232,7 +232,7 @@ h3 span {
 .extendedTimeDay {
     font-family: 'Work Sans', sans-serif; 
     color: #98d8f3;
-    font-size: 24px;
+    font-size: 2vw;
     text-transform: uppercase;
     font-weight: 100;
     margin-top: 5px;
@@ -246,9 +246,9 @@ h3 span {
 .hourTemp {
     font-family: 'Exo 2', sans-serif; 
     float: left;
-    font-size: 32px;
+    font-size: 2.4vw;
     vertical-align: middle;
-    font-size: 34px;
+    font-size: 2.2em;
     margin-bottom: 3px;
 }
 
@@ -351,4 +351,131 @@ h3 span {
     color: #98d8f3;
     margin-top: 48px;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-top: 40px;
+    }
+
+    .tenDayForecast i {
+        background-repeat: no-repeat !important;
+        height: 25%;
+        margin: 15px 0 -7px 15px;
+    }
+
+    .hourTemp {
+        font-size: 1.6em;
+    }
+
+    .currentWeather {
+       display: block;
+    }
+
+    .todaysWeather {
+        text-align: center;
+    }
+
+    .hourForecast div {
+        height: 115px;
+        flex-direction: column-reverse;
+    }
+
+    .focalConditions {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .conditionDetails {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .stat:nth-child(3n+3) {
+        text-align: right;
+    }
+
+    .stat:nth-child(2), .stat:nth-child(5) {
+        text-align: center;
+    }
+
+    header div {
+        width: 100%;
+    }
+
+    header input {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+        height: 40px;
+    }
+
+    .logo {
+        height: 35px;
+        display: block;
+        margin: 0px auto 25px auto;
+    }
+
+    header {
+        height: 140px;
+        align-items: normal;
+        padding-top: 25px;
+    }
+
+    .day p {
+        font-size: 1.5vw;
+    }
+
+    .day .precipitation {
+        font-size: 1.8vw;
+    }
+
+    .day {
+        height: 245px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .day {
+        width: 28%;
+    }
+
+    .extendedHiLow {
+        font-size: 3.8vw;
+    }
+
+    .extendedTimeDay {
+        font-size: 4vw;
+    }
+
+    .tenDayForecast i {
+        height: 32%;
+    }
+
+    .day p {
+        font-size: 2.5vw;
+    }
+
+    .day .precipitation {
+        font-size: 2.8vw;
+    }
+
+    .day span {
+        font-size: 4vw;
+        display: block;
+    }
+
+    .day {
+        height: 255px;
+    }
+
+    .hourTemp {
+        font-size: 1.3em;
+    }
+
+    .hourForecast div {
+        height: 95px;
+    }
 }
