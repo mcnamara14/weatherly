@@ -58,6 +58,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "TDD": "git+https://github.com/hdechat/complete-me.git",
     "weather-underground-icons": "^1.0.0"
   }
 }
