@@ -43,7 +43,7 @@ header input {
     color: #eee;
 }
 
-header input::placeholder {
+header input::placeholder, .locationInput input::placeholder{
     color: #eee;
 }
 
@@ -308,4 +308,47 @@ h3 span {
     height: 400px;
     width: 400px;
     margin: 0 -30px 0 -80px;
+}
+
+.locationInput {
+    width: 800px;
+    height: 400px;
+    border: 5px solid;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+    background: rgba(60, 109, 193, 0.6);
+    border-radius: 5px;
+}
+
+.locationInput h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 70px;
+}
+
+.locationInput input {
+    margin-top: 20px;
+    float: none;
+    font-size: 22px;
+    border-radius: 5px;
+    height: 60px;
+    text-align: center;
+    width: 400px;
+    border: none;
+    box-shadow: inset 3px 2px 3px #ccc;
+}
+
+.locationInput input::placeholder{
+    color: #3b6cc1;
+}
+
+.locationInput p {
+    color: #98d8f3;
+    margin-top: 48px;
+    font-size: 20px;
 }
