@@ -26,12 +26,6 @@ describe('App tests', () => {
       
       expect(renderedApp.state('stateUSA')).toEqual(expectation)
     })
-    
-    // it('should not start with default data', () => {
-    //   const expectation = null;
-
-    //   expect(renderedApp.state('data')).toEqual(expectation)
-    // })
 
     it('should have default weather images', () => {
       const expectation = 'wu wu-black wu-256 wu-clear';
@@ -72,6 +66,7 @@ describe('App tests', () => {
     })
 
     it('should set city and stateUSA state correctly', () => {
+      // fetch = jest.fn(() => new Promise(resolve => resolve()));
       const location = 'San Diego, CA';
       const stateExpectation = 'CA';
       const cityExpectation = 'San Diego';
@@ -80,20 +75,6 @@ describe('App tests', () => {
 
       expect(renderedApp.state('stateUSA')).toEqual(stateExpectation)
       expect(renderedApp.state('city')).toEqual(cityExpectation)
-    })
-
-    // it('should send data to local storage', () => {
-    //   localStorage.setItem('location', {city: "delray beach", stateUSA: "fl"})
-    //   renderedApp = mount(<App />)
-
-    //   renderedApp.instance().componentDidMount();
-
-    //   const itemsInStorage = localStorage.getItem('location')
-    //   eval(locus)
-    //   expect(itemsInStorage.prop('city')).to.equal('delray beach');
-    // })
-
-
+    }) 
   })
-
 })
