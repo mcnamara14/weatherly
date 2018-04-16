@@ -27,7 +27,13 @@ header {
 header div {
     width: 80%;
     margin: 0 auto;
-    padding: 0 20px
+    padding: 0 20px;
+    display: flex;
+}
+
+header .locationInput {
+    float: right;
+    width: 100vw;
 }
 
 header input {
@@ -43,8 +49,42 @@ header input {
     color: #eee;
 }
 
-header input::placeholder, .locationInput input::placeholder{
+header input::placeholder, .welcomeBox input::placeholder{
     color: #eee;
+}
+
+header .submitBtn {
+    display: none;
+}
+
+.submitBtn {
+    width: 9vw;
+    display: block;
+    border: 1px solid #fff;
+    height: 60px;
+    background: #2d569c;
+    margin: 40px auto;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 1.2vw;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+}
+
+
+.welcomeBox .locationInput {
+    height: 60px;
+    width: 80%;
+    margin: 40px auto 0 auto;
+}
+
+.welcomeBox .locationInput span {
+    margin: 0;
+    display: inline-block;
+    padding: 0;
 }
 
 .logo {
@@ -310,19 +350,19 @@ h3 span {
     margin: 0 -30px 0 -80px;
 }
 
-.locationInput {
-    width: 800px;
-    height: 400px;
+.welcomeBox {
+    width: 50vw;
+    height: 500px;
     border: 5px solid;
     margin: auto;
     display: block;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
     background: rgba(60, 109, 193, 0.6);
     border-radius: 5px;
 }
 
-.locationInput h1 {
+.welcomeBox h1 {
     color: #fff;
     text-transform: uppercase;
     font-family: 'Exo 2', sans-serif;
@@ -331,25 +371,24 @@ h3 span {
     padding-top: 70px;
 }
 
-.locationInput input {
-    margin-top: 20px;
+.welcomeBox input {
     float: none;
     font-size: 22px;
     border-radius: 5px;
     height: 60px;
     text-align: center;
-    width: 400px;
+    width: 29vw;
     border: none;
     box-shadow: inset 3px 2px 3px #ccc;
 }
 
-.locationInput input::placeholder{
+.welcomeBox input::placeholder{
     color: #3b6cc1;
 }
 
-.locationInput p {
+.welcomeBox p {
     color: #98d8f3;
-    margin-top: 48px;
+    margin-top: 45px;
     font-size: 20px;
 }
 
