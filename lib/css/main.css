@@ -335,8 +335,8 @@ h3 span {
 
 .tenDayForecast i {
     background-repeat: no-repeat !important;
-    height: 50%;
-    margin: 0px 0 -10px 15px;
+    height: 43%;
+    margin: 0px 0 -10px 20px;
 }
 
 .day .precipitation {
@@ -440,6 +440,7 @@ h3 span {
 
     header div {
         width: 100%;
+        display: block;
     }
 
     header input {
