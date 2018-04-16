@@ -26,7 +26,11 @@ describe('App tests', () => {
       const expectation = '';
       
       expect(renderedApp.state('stateUSA')).toEqual(expectation)
+<<<<<<< HEAD
     });
+=======
+    })
+>>>>>>> e81a28577961c6ba474a507b89d190c6e6006ad4
 
     it('should have default weather images', () => {
       const expectation = 'wu wu-black wu-256 wu-clear';
@@ -45,7 +49,11 @@ describe('App tests', () => {
   describe('Update location', () => { 
 
     it('should set city and stateUSA state correctly', () => {
+<<<<<<< HEAD
 
+=======
+      // fetch = jest.fn(() => new Promise(resolve => resolve()));
+>>>>>>> e81a28577961c6ba474a507b89d190c6e6006ad4
       const location = 'San Diego, CA';
       const stateExpectation = 'CA';
       const cityExpectation = 'San Diego';
@@ -54,6 +62,7 @@ describe('App tests', () => {
 
       expect(renderedApp.state('stateUSA')).toEqual(stateExpectation)
       expect(renderedApp.state('city')).toEqual(cityExpectation)
+<<<<<<< HEAD
     });
   });
 
@@ -87,3 +96,8 @@ describe('App tests', () => {
     });
   });
 });
+=======
+    }) 
+  })
+})
+>>>>>>> e81a28577961c6ba474a507b89d190c6e6006ad4

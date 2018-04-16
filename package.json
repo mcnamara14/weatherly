@@ -63,6 +63,8 @@
   },
   "dependencies": {
     "TDD": "git+https://github.com/hdechat/complete-me.git",
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1",
     "locus": "^2.0.1",
     "weather-underground-icons": "^1.0.0"
   }
