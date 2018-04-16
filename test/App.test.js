@@ -1,7 +1,9 @@
+
 import { shallow, mount } from 'enzyme';
 import App from '../lib/App.js';
 import React from 'react';
 require('locus');
+
 // comment out /Users/tylermcnamara/turing/m2/projects/weatherly/node_modules/weather-underground-icons/dist/wu-icons-style.css styles
 
 
@@ -24,7 +26,7 @@ describe('App tests', () => {
       
       expect(renderedApp.state('stateUSA')).toEqual(expectation)
     })
-
+    
     // it('should not start with default data', () => {
     //   const expectation = null;
 
