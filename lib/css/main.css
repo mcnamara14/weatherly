@@ -520,6 +520,19 @@ h3 span {
     .day {
         height: 245px;
     }
+
+    .errorBox {
+        top: 100px;
+        left: 125px;
+    }
+
+    .welcomeBox h1 {
+        font-size: 4vw;
+    }
+
+    .welcomeBox input, .welcomeBox p {
+        font-size: 1.6vw;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -563,4 +576,10 @@ h3 span {
     .hourForecast div {
         height: 95px;
     }
+
+    .currentConditionImg .wu-256 {
+        height: 325px;
+        width: 325px;
+    }
+    
 }
