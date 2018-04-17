@@ -74,7 +74,6 @@ header .submitBtn {
     cursor: pointer;
 }
 
-
 .welcomeBox .locationInput {
     height: 60px;
     width: 80%;
@@ -426,6 +425,7 @@ h3 span {
 
 .errorBox .submitBtn {
     width: 17vw;
+    display: block;
 }
 
 @media screen and (max-width: 1200px) {
