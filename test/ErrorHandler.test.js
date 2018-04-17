@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import ErrorHandler from '../lib/ErrorHandler.js';
 import React from 'react';
 

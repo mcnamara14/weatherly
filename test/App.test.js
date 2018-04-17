@@ -1,4 +1,3 @@
-
 import { shallow, mount } from 'enzyme';
 import App from '../lib/App.js';
 import React from 'react';
@@ -33,7 +32,7 @@ describe('App tests', () => {
 
     // it('should have default weather images', () => {
     //   const expectation = 'wu wu-black wu-256 wu-clear';
-    //   expect(renderedApp.find('images')Clear).toEqual(expectation)
+    //   expect(renderedApp.find('images').Clear).toEqual(expectation)
     // });
 
     it('should have a default welcome state of true', () => {
@@ -58,7 +57,7 @@ describe('App tests', () => {
     });
   });
 
-    // describe('Toggle Welcome Value', () => {
+  //   describe('Toggle Welcome Value', () => {
 
   //   it('should toggle state of welcome to false', () => {
 
