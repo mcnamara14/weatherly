@@ -33,7 +33,7 @@ describe('App tests', () => {
 
     // it('should have default weather images', () => {
     //   const expectation = 'wu wu-black wu-256 wu-clear';
-    //   expect(renderedApp.images.Clear).toEqual(expectation)
+    //   expect(renderedApp.find('images')Clear).toEqual(expectation)
     // });
 
     it('should have a default welcome state of true', () => {
@@ -58,19 +58,18 @@ describe('App tests', () => {
     });
   });
 
-    describe('Toggle Welcome Value', () => {
+    // describe('Toggle Welcome Value', () => {
 
-    // it('should toggle state of welcome to false', () => {
+  //   it('should toggle state of welcome to false', () => {
 
-    //   renderedApp.state.data = {currentCondition: 'Clear'}
-    //    const expectation = false;
+  //      const expectation = false;
 
-    //    renderedApp.instance().toggleWelcome()
+  //      renderedApp.instance().toggleWelcome()
 
-    //    expect(renderedApp.state('welcome')).toEqual(expectation)
-    // });
+  //      expect(renderedApp.state('welcome')).toEqual(expectation)
+  //   });
 
-  });
+  // });
 
   describe('Render components ', () => { 
 

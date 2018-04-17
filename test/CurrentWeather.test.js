@@ -4,19 +4,19 @@ import React from 'react';
 
 require('locus');
 
-describe('Current Weather tests', () => {
-  let renderedCurrWeather;
+// describe('Current Weather tests', () => {
+//   let renderedCurrWeather;
 
-  beforeEach(() => {
-    renderedCurrWeather = shallow(<CurrentWeather />);
-  });
+//   beforeEach(() => {
+//     renderedCurrWeather = shallow(<CurrentWeather />);
+//   });
 
-  it('renders', () => {
+//   it('renders', () => {
     
-  })
+//   })
 
   
-});
+// });
 
 //EXAMPLES
   //**CHECKING THAT THE COMPONENTS HTML RENDERS THE PROPER TEXT
