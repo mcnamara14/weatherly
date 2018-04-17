@@ -22,10 +22,11 @@
         "after": true
       }
     ],
-    "curly": "error",
+    "react/prop-types": 0,
+    "curly": "off",
     "eqeqeq": ["error", "always"],
-    "getter-return": ["error", { "allowImplicit": true }],
-    "indent": ["warn", 2],
+    "getter-return": ["off", { "allowImplicit": true }],
+    "indent": ["off", 2],
     "key-spacing": [
       "error", {
         "beforeColon": false,
