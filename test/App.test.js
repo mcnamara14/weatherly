@@ -22,7 +22,8 @@ describe('App tests', () => {
 
     it('should have default state of empty strings for city', () => {
       const expectation = '';
-      expect(renderedApp.state('city')).toEqual(expectation)
+
+      expect(renderedApp.state('city')).toEqual(expectation);
     });
 
     it('should have default state of empty strings for state', () => {
@@ -30,10 +31,11 @@ describe('App tests', () => {
       expect(renderedApp.state('stateUSA')).toEqual(expectation)
     });
 
-    // it('should have default weather images', () => {
-    //   const expectation = 'wu wu-black wu-256 wu-clear';
-    //   expect(renderedApp.find('images').Clear).toEqual(expectation)
-    // });
+    it('should have default weather images', () => {
+      const expectation = 'wu wu-black wu-256 wu-clear';
+      
+      expect(renderedApp.state('images').Clear).toEqual(expectation)
+    });
 
     it('should have a default welcome state of true', () => {
       const expectation = true;
@@ -42,8 +44,30 @@ describe('App tests', () => {
     });
   });
 
+  describe('Render components ', () => { 
+    beforeEach(() => {
+      renderedApp = shallow(<App />);
+    });
+
+    it('should render the welcome page on new visit', () => {
+
+      expect(renderedApp.find('WelcomePage').length).toEqual(1);
+    });
+
+    it('should render all other components when welcome state is false', () => {
+      renderedApp.setState({welcome: false});
+
+      expect(renderedApp.find('Header').length).toEqual(1);
+      expect(renderedApp.find('CurrentWeather').length).toEqual(1);
+      expect(renderedApp.find('SevenHour').length).toEqual(1);
+      expect(renderedApp.find('TenDay').length).toEqual(1); 
+    });
+  });
 
   describe('Update location', () => { 
+    beforeEach(() => {
+      renderedApp = shallow(<App />);
+    });
 
     it('should set city and stateUSA state correctly', () => {
       const location = 'San Diego, CA';
@@ -57,18 +81,18 @@ describe('App tests', () => {
     });
   });
 
-  //   describe('Toggle Welcome Value', () => {
+    describe('Toggle Welcome Value', () => {
 
-  //   it('should toggle state of welcome to false', () => {
+    it('should toggle state of welcome to false', () => {
 
-  //      const expectation = false;
+       const expectation = false;
 
-  //      renderedApp.instance().toggleWelcome()
+       renderedApp.instance().toggleWelcome()
 
-  //      expect(renderedApp.state('welcome')).toEqual(expectation)
-  //   });
+       expect(renderedApp.state('welcome')).toEqual(expectation)
+    });
 
-  // });
+  });
 
   describe('Render components ', () => { 
 
@@ -77,14 +101,13 @@ describe('App tests', () => {
       expect(renderedApp.find('WelcomePage').length).toEqual(1);
     });
 
-    // it('should render all other components when welcome state is false', () => {
-    //   renderedApp.setState({welcome: false});
+    it('should render all other components when welcome state is false', () => {
+      renderedApp.setState({welcome: false});
 
-    //   expect(renderedApp.find('Header').length).toEqual(1);
-    //   expect(renderedApp.find('CurrentWeather').length).toEqual(1);
-    //   expect(renderedApp.find('SevenHour').length).toEqual(1);
-    //   expect(renderedApp.find('TenDay').length).toEqual(1); 
-    // });
+      expect(renderedApp.find('Header').length).toEqual(1);
+      expect(renderedApp.find('CurrentWeather').length).toEqual(1);
+      expect(renderedApp.find('SevenHour').length).toEqual(1);
+      expect(renderedApp.find('TenDay').length).toEqual(1); 
+    });
   });
 });
-
