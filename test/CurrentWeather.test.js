@@ -6,11 +6,13 @@ require('locus');
 
 describe('Current Weather tests', () => {
 
-  let renderedCurrentWeather = shallow(<CurrentWeather currentCondition={'Clear'} />);
+  let renderedCurrentWeather = 
+  shallow(<CurrentWeather currentCondition={'Clear'} />);
 
   it('should include one section with currentWeather class', () => {
 
-    expect(renderedCurrentWeather.find('section.currentWeather').length).toEqual(1);
+    expect(renderedCurrentWeather.find('section.currentWeather')
+    .length).toEqual(1);
   });
 
   it('should include nine divs', () => {
@@ -20,7 +22,8 @@ describe('Current Weather tests', () => {
 
   it('should include one icon inside div with class currentConditionImg', () => {
 
-    expect(renderedCurrentWeather.find('div.currentConditionImg i').length).toEqual(1);
+    expect(renderedCurrentWeather.find('div.currentConditionImg i')
+    .length).toEqual(1);
   });
 
   it('should include one each of h1, h2, h4, h6, and six h5', () => {
@@ -40,6 +43,7 @@ describe('Current Weather tests', () => {
   it('should render text inside div with class todaysWeather', () => {
     const expectation = 'Today\'s Weather';
 
-    expect(renderedCurrentWeather.find('div.todaysWeather').text()).toEqual(expectation);
+    expect(renderedCurrentWeather.find('div.todaysWeather')
+    .text()).toEqual(expectation);
   });
 });

@@ -403,7 +403,7 @@ h3 span {
     left: 500px;
     padding: 30px;
     flex-direction: column;
-    border: 4px solid #2763bf;
+    border: 7px solid #fff;
     border-radius: 4px;
 }
 
@@ -421,13 +421,20 @@ h3 span {
 }
 
 .errorBox img {
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
     width: 60%;
+}
+
+.errorBox p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 26px;
 }
 
 .errorBox .submitBtn {
     width: 17vw;
     display: block;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 1200px) {
