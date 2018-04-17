@@ -4,7 +4,8 @@ import React from 'react';
 
 require('locus');
 
-// comment out /Users/tylermcnamara/turing/m2/projects/weatherly/node_modules/weather-underground-icons/dist/wu-icons-style.css styles
+// comment out /Users/tylermcnamara/turing/m2/projects/weatherly/node_modules
+// /weather-underground-icons/dist/wu-icons-style.css styles
 
 
 describe('App tests', () => {
@@ -15,8 +16,8 @@ describe('App tests', () => {
   });
 
   it('should be a thing', () => {
-    expect(renderedApp).toBeDefined()
-  })
+    expect(renderedApp).toBeDefined();
+  });
 
   describe('App defaults', () => { 
 
@@ -28,19 +29,20 @@ describe('App tests', () => {
 
     it('should have default state of empty strings for state', () => {
       const expectation = '';
-      expect(renderedApp.state('stateUSA')).toEqual(expectation)
+
+      expect(renderedApp.state('stateUSA')).toEqual(expectation);
     });
 
-    it('should have default weather images', () => {
-      const expectation = 'wu wu-black wu-256 wu-clear';
+    // it('should have default weather images', () => {
+    //   const expectation = 'wu wu-black wu-256 wu-clear';
       
-      expect(renderedApp.state('images').Clear).toEqual(expectation)
-    });
+    //   expect(renderedApp.state('images').Clear).toEqual(expectation)
+    // });
 
     it('should have a default welcome state of true', () => {
       const expectation = true;
 
-      expect(renderedApp.state('welcome')).toEqual(expectation)
+      expect(renderedApp.state('welcome')).toEqual(expectation);
     });
   });
 
@@ -76,8 +78,8 @@ describe('App tests', () => {
 
       renderedApp.instance().updateLocation(location);
 
-      expect(renderedApp.state('stateUSA')).toEqual(stateExpectation)
-      expect(renderedApp.state('city')).toEqual(cityExpectation)
+      expect(renderedApp.state('stateUSA')).toEqual(stateExpectation);
+      expect(renderedApp.state('city')).toEqual(cityExpectation);
     });
   });
 
@@ -87,9 +89,9 @@ describe('App tests', () => {
 
        const expectation = false;
 
-       renderedApp.instance().toggleWelcome()
+       renderedApp.instance().toggleWelcome();
 
-       expect(renderedApp.state('welcome')).toEqual(expectation)
+       expect(renderedApp.state('welcome')).toEqual(expectation);
     });
 
   });
