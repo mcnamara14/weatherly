@@ -4,35 +4,42 @@ import React from 'react';
 
 require('locus');
 
-// describe('Current Weather tests', () => {
-//   let renderedCurrWeather;
+describe('Current Weather tests', () => {
 
-//   beforeEach(() => {
-//     renderedCurrWeather = shallow(<CurrentWeather />);
-//   });
+  let renderedCurrentWeather = shallow(<CurrentWeather currentCondition={'Clear'} />);
 
-//   it('renders', () => {
-    
-//   })
+  it('should include one section with currentWeather class', () => {
 
-  
-// });
+    expect(renderedCurrentWeather.find('section.currentWeather').length).toEqual(1);
+  });
 
-//EXAMPLES
-  //**CHECKING THAT THE COMPONENTS HTML RENDERS THE PROPER TEXT
-// it('renders', () => {
-//   const wrapper = shallow(<Hello name="Jack" />);
-//   expect(wrapper.find('p').text()).toEqual('Hello, Jack!');
+  it('should include nine divs', () => {
 
-// it('renders the name given', () => {...})
+    expect(renderedCurrentWeather.find('div').length).toEqual(14);
+  });
 
-// it('uses "Unknown" if no name is passed in', () => {
-//   const wrapper = shallow(<Hello />);
-//   expect(wrapper.find('p').text()).toEqual('Hello, Unknown!');
-// });
-// expect(received).toEqual(expected)
+  it('should include one icon inside div with class currentConditionImg', () => {
 
-// Expected value to equal:
-//   "Hello, Unknown!"
-// Received:
-//   "Hello, !"
+    expect(renderedCurrentWeather.find('div.currentConditionImg i').length).toEqual(1);
+  });
+
+  it('should include one each of h1, h2, h4, h6, and six h5', () => {
+
+    expect(renderedCurrentWeather.find('h1').length).toEqual(1);
+    expect(renderedCurrentWeather.find('h2').length).toEqual(1);
+    expect(renderedCurrentWeather.find('h4').length).toEqual(1);
+    expect(renderedCurrentWeather.find('h5').length).toEqual(6);
+    expect(renderedCurrentWeather.find('h6').length).toEqual(1);
+  });
+
+  it('should include seven p elements', () => {
+
+    expect(renderedCurrentWeather.find('p').length).toEqual(7);
+  });
+
+  it('should render text inside div with class todaysWeather', () => {
+    const expectation = 'Today\'s Weather';
+
+    expect(renderedCurrentWeather.find('div.todaysWeather').text()).toEqual(expectation);
+  });
+});
