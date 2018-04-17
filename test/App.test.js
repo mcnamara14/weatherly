@@ -27,11 +27,11 @@ describe('App tests', () => {
       expect(renderedApp.state('stateUSA')).toEqual(expectation)
     })
 
-    it('should have default weather images', () => {
-      const expectation = 'wu wu-black wu-256 wu-clear';
+    // it('should have default weather images', () => {
+    //   const expectation = 'wu wu-black wu-256 wu-clear';
       
-      expect(renderedApp.state('images').Clear).toEqual(expectation)
-    })
+    //   expect(renderedApp.state('images').Clear).toEqual(expectation)
+    // })
 
     it('should have a default welcome state of true', () => {
       const expectation = true;
@@ -66,13 +66,12 @@ describe('App tests', () => {
     })
 
     it('should set city and stateUSA state correctly', () => {
-      // fetch = jest.fn(() => new Promise(resolve => resolve()));
       const location = 'San Diego, CA';
       const stateExpectation = 'CA';
       const cityExpectation = 'San Diego';
 
       renderedApp.instance().updateLocation(location);
-
+      
       expect(renderedApp.state('stateUSA')).toEqual(stateExpectation)
       expect(renderedApp.state('city')).toEqual(cityExpectation)
     }) 
