@@ -1,13 +1,20 @@
 import { shallow, mount } from 'enzyme';
 import CurrentWeather from '../lib/CurrentWeather.js';
 import React from 'react';
+import cleanedData from '../lib/mock-data.js';
+import { images } from '../lib/weatherIcons';
 
 require('locus');
 
 describe('Current Weather tests', () => {
+ 
+          //jest docs for method test for deeper texts
 
-  let renderedCurrentWeather = 
-  shallow(<CurrentWeather currentCondition={'Clear'} />);
+  let renderedCurrentWeather = shallow(<CurrentWeather 
+    images={images}
+    current={cleanedData.current}
+    forecast={cleanedData.forecast}
+    />);
 
   it('should include one section with currentWeather class', () => {
 
@@ -15,7 +22,7 @@ describe('Current Weather tests', () => {
     .length).toEqual(1);
   });
 
-  it('should include nine divs', () => {
+  it('should include fourteen divs', () => {
 
     expect(renderedCurrentWeather.find('div').length).toEqual(14);
   });
@@ -41,7 +48,7 @@ describe('Current Weather tests', () => {
   });
 
   it('should render text inside div with class todaysWeather', () => {
-    const expectation = 'Today\'s Weather';
+    const expectation = "Today\'s WeatherDecreasing cloudiness and becoming windy. High 18C. WNW winds at 15 to 25 km/h, increasing to 30 to 50 km/h. Winds could occasionally gust over 65 km/h.";
 
     expect(renderedCurrentWeather.find('div.todaysWeather')
     .text()).toEqual(expectation);
