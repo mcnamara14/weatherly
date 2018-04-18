@@ -2,15 +2,24 @@ import { shallow, mount } from 'enzyme';
 import Location from '../lib/Location.js';
 import React from 'react';
 
+//.simulate jest
+//input enter 
+
 require('locus');
 
 describe('Location tests', () => {
   let renderedLocation = shallow(<Location />);
 
-  it('should default to empty values in state', () => {
+  it('should update suggestion based on search', () => {
 
-    expect(renderedLocation.state('userInputLocation')).toEqual('');
-    expect(renderedLocation.state('suggestions')).toEqual([]);
+    renderedLocation.find('input').simulate('change', {target: {value: ''}});
+
+    expect(renderedLocation.state('userInputLocation')).toEqual(''); 
+
+
+    renderedLocation.find('input').simulate('change', {target: {value: 'Bou'}});
+    
+    expect(renderedLocation.state('suggestions')).toEqual([ "boulder, co", "bountiful, ut"]);
   });
 
   it('should change state value', () => {
