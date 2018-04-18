@@ -20,6 +20,7 @@ describe('Location tests', () => {
     renderedLocation.find('input').simulate('change', {target: {value: 'Bou'}});
     
     expect(renderedLocation.state('suggestions')).toEqual([ "boulder, co", "bountiful, ut"]);
+    expect(renderedLocation.state('userInputLocation')).toEqual('Bou'); 
   });
 
   it('should change state value', () => {
