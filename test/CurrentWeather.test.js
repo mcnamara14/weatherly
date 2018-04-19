@@ -7,8 +7,6 @@ import { images } from '../lib/weatherIcons';
 require('locus');
 
 describe('Current Weather tests', () => {
- 
-          //jest docs for method test for deeper texts
 
   let renderedCurrentWeather = shallow(<CurrentWeather 
     images={images}
@@ -48,9 +46,39 @@ describe('Current Weather tests', () => {
   });
 
   it('should render text inside div with class todaysWeather', () => {
-    const expectation = "Today\'s WeatherDecreasing cloudiness and becoming windy. High 18C. WNW winds at 15 to 25 km/h, increasing to 30 to 50 km/h. Winds could occasionally gust over 65 km/h.";
+    const expectation = "Decreasing cloudiness and becoming windy. High 18C. WNW winds at 15 to 25 km/h, increasing to 30 to 50 km/h. Winds could occasionally gust over 65 km/h.";
 
-    expect(renderedCurrentWeather.find('div.todaysWeather')
+    expect(renderedCurrentWeather.find('div.todaysWeather p')
     .text()).toEqual(expectation);
+  });
+
+  it('should render current temp', () => {
+    const expectation = '60.8o';
+
+    expect(renderedCurrentWeather.find('.focalInfo h1').text()).toEqual(expectation);
+  });
+
+  it('should render current conditions', () => {
+    const expectation = 'Mostly Cloudy';
+
+    expect(renderedCurrentWeather.find('.focalInfo h4').text()).toEqual(expectation);
+  });
+
+  it('should render high and low temps', () => {
+    const expectation = '62o / 54o';
+
+    expect(renderedCurrentWeather.find('.currentHiLow').text()).toEqual(expectation);
+  });
+
+  it('should render the day', () => {
+    const expectation = 'Monday Apr 16, 2018';
+
+    expect(renderedCurrentWeather.find('h6').text()).toEqual(expectation);
+  });
+
+  it('should render the current city and state', () => {
+    const expectation = 'San Diego California'
+
+    expect(renderedCurrentWeather.find('h2').text()).toEqual(expectation);
   });
 });
