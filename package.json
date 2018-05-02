@@ -54,8 +54,8 @@
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.4.2",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-test-renderer": "^15.5.4",
+    "react-dom": "^15.6.2",
+    "react-test-renderer": "^15.6.2",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.14",
@@ -66,6 +66,8 @@
     "es6-promise": "^4.2.4",
     "isomorphic-fetch": "^2.2.1",
     "locus": "^2.0.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-utils": "0.0.1",
     "weather-underground-icons": "^1.0.0"
   }
 }
