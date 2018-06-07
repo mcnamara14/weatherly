@@ -33,12 +33,6 @@ describe('App tests', () => {
       expect(renderedApp.state('stateUSA')).toEqual(expectation);
     });
 
-    // it('should have default weather images', () => {
-    //   const expectation = 'wu wu-black wu-256 wu-clear';
-      
-    //   expect(renderedApp.state('images').Clear).toEqual(expectation)
-    // });
-
     it('should have a default welcome state of true', () => {
       const expectation = true;
 
