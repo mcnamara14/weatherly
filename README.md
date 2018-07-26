@@ -1,5 +1,7 @@
 # weatherly
 
+![weathrly-video-screenshot](https://user-images.githubusercontent.com/479463/43278965-d51179f6-90c9-11e8-8ad2-bea5bda60019.gif)
+
 ## Overview
 
 It’s important to know what Mother Nature is going to throw at you each day – what if you wear flip flops because it’s sunny and 65 degrees in the morning and then it snows all afternoon (this is Colorado, after all).
